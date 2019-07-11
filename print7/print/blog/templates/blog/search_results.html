@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+{% block title %}
+Поиск
+{% endblock title %}
+{% block content %}
+    <div class="mag-posts-content mt-30 mb-30 p-30 box-shadow">
+        <!-- Trending Now Posts Area -->
+
+        <!-- Feature Video Posts Area -->
+        <div class="feature-video-posts mb-30">
+            <!-- Section Title -->
+            <div class="section-heading">
+                <h5>Поиск</h5>
+            </div>
+            <div class="featured-video-posts">
+                <div class="row">
+                    <div class="col-12 col-lg-7">
+                        <ul>
+                        <div class="container">
+                            {% for post in object_list %}
+                                <li>
+                                    <a href="{% url 'post-detail' pk=post.pk %}">{{ post.title }}, {{ post.content }}</a>
+                                </li>
+                            {% endfor %}
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br> <br> <br> <br>
+{% endblock content %}
