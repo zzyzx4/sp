@@ -1,0 +1,39 @@
+menu {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+body {
+    height: auto;
+    min-height: 100vh;
+    font: normal 100%/1.6 PT Sans,Arial,sans-serif;
+    color: #000;
+    background: #fff;
+}
+.main-navigation {
+    background: #fff;
+    border-right: 1px solid rgba(0,0,0,.1);
+    font-size: 14px;
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 62px;
+    z-index: 110;
+}
+.h1, .h2, .h3, .h4, blockquote, body, dd, dl, dt, fieldset, form, h1, h2, h3, h4, html, legend, li, menu, ol, p, table, td, th, ul {
+    margin: 0;
+    padding: 0;
+}
+menu, ol, ul {
+    list-style-type: none;
+}
+.menu {
+    margin-bottom: 1em;
+    width: 220px;
+}
